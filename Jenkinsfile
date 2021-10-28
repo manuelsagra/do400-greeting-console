@@ -24,7 +24,7 @@ pipeline{
         stage("Release") {
             steps {
                 sh '''
-                    oc project aamcjs-greetings
+                    oc project aamjcs-greetings
                     oc start-build greeting-console --follow --wait
                 '''
             }
